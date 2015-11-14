@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://smartsave/locale/smartsave.dtd">
+
+<!-- DEFINIZIONE DELL'OVERLAY -->
+<overlay id="smartsaveOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<!-- IMPORT IL FILE DI SCRIPTING -->
+	<script type="application/x-javascript" src="chrome://smartsave/content/smartsave.js"/>
+
+	<!-- Aggiunte al menu File -->
+	<menupopup id="menu_FilePopup">	<!-- Questo id deve essere quello di cui inserisco!! -->
+
+		<!-- Menu File/Export-->
+		<menu id="menu_Export" 
+			label="&smartsave.menu.file.export;" 
+			insertafter="menu_close">
+
+			<menupopup id="menu_ExportPopup">
+				<!-- Menu File/Export/Inbox -->
+				<menuitem id="menu_ExportInbox" 
+					label="&smartsave.menu.file.export.inbox;" 
+					oncommand="saveSpecialFolder('INBOX');" />
+
+				<!-- Menu File/Export/Sent -->
+				<menuitem id="menu_ExportSent" 
+					label="&smartsave.menu.file.export.sent;"
+					oncommand="saveSpecialFolder('SENT');"/>
+
+
+				<!-- Menu File/Export/Drafts -->
+				<menuitem id="menu_ExportDrafts" 
+					label="&smartsave.menu.file.export.drafts;" 
+					oncommand="saveSpecialFolder('DRAFTS');"/>
+
+				<!-- Menu File/Export/All -->
+				<menuitem id="menu_ExportAll" 
+					label="&smartsave.menu.file.export.all;"
+					oncommand="saveSpecialFolder('ALL');"/>
+
+			</menupopup>
+		</menu>
+
+		<menuseparator insertafter="menu_close"/>
+
+	</menupopup><!-- Fine nel menu file-->
+
+	<!-- Aggiunta della configurazione al menu tools -->
+	<menupopup id="taskPopup">
+
+		<!-- Accesso al menu di configurazione tramite Tools/Config-->
+		<menuitem id="menu_ConfigSmartsave"
+			label="&smartsave.menu.tools.config;"
+			insertafter="deleteJunk"
+			oncommand="showOptionDialog();" />
+		
+		<!-- Separatore -->
+		<menuseparator insertafter="deleteJunk" />
+
+	</menupopup>
+
+
+	<!-- Inserimento nel menu contestuale delle singole e-mail -->
+	<menupopup id="threadPaneContext">
+		<menuitem id="context_SmartSave_SaveThis" 
+			label="&smartsave.context.singlemail;" 
+			oncommand="exportSelectedMail();"/>
+
+		<menuseparator />
+	</menupopup>
+
+
+	<!-- Inserimento nel menu contestuale delle cartelle -->
+	<menupopup id="folderPaneContext">
+		<menuitem id="context_SmartSave_SaveFolder" 
+			label="&smartsave.context.folder;" 
+			oncommand="exportSelectedFolder();">
+
+		</menuitem>   
+
+		<menuseparator />
+	</menupopup>
+
+	<!-- Aggiunta alla barra degli oggetti -->
+	<toolbarpalette id="MailToolbarPalette">
+
+		<!-- Bottone per la congigrazione con scelta delle operazioni in modo veloce -->
+		<toolbarbutton id="toolbar_Smartsave_outer" 
+			class="toolbarbutton-1"
+			type="menu-button"
+			tooltiptext="&smartsave.toolbar.tooltip;"
+			image="chrome://smartsave/content/smartsave.gif"
+			label="&smartsave.toolbar.label;"
+			oncommand="showOptionDialog();">
+
+			<menupopup id="smartsave_toolbarpopup">
+				<menuitem id="toolbar_samrtsave_export_inbox" 
+					label="&smartsave.menu.toolbar.export.inbox;" 
+					tooltiptext="&smartsave.menu.toolbar.export.inbox.tooltip;" 
+					oncommand="saveSpecialFolder('INBOX','tool');" />
+				<menuitem id="toolbar_samrtsave_export_sent" 
+					label="&smartsave.menu.toolbar.export.sent;" 
+					tooltiptext="&smartsave.menu.toolbar.export.sent.tooltip;" 
+					oncommand="saveSpecialFolder('SENT','tool');" />
+				<menuitem id="toolbar_samrtsave_export_drafts" 
+					label="&smartsave.menu.toolbar.export.drafts;" 
+					tooltiptext="&smartsave.menu.toolbar.export.drafts.tooltip;" 
+					oncommand="saveSpecialFolder('DRAFTS','tool');" />
+				<menuitem id="toolbar_samrtsave_export_all" 
+					label="&smartsave.menu.toolbar.export.all;" 
+					tooltiptext="&smartsave.menu.toolbar.export.all.tooltip;" 
+					oncommand="saveSpecialFolder('ALL','tool');" />
+			</menupopup>
+
+		</toolbarbutton>
+	</toolbarpalette>
+
+</overlay>

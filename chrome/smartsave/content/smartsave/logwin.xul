@@ -1,0 +1,33 @@
+<?xml version="1.0"?> 
+
+<!-- Carico gli stili da utilizzare-->
+<?xml-stylesheet href="chrome://communicator/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://messenger/skin/prefPanels.css" type="text/css"?> 
+
+<!-- Carico il DTD con le stringhe localizzate -->
+<!DOCTYPE dialog SYSTEM "chrome://smartsave/locale/smartsave.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+		buttons="accept"
+		title="&smartsave.dialog.logger.title;"
+		id="smartsave-logger"
+		orient="vertical" flex="0"
+		persist="screenX screenY height width"
+		onload="init();">
+
+	<!-- Importo lo script -->
+	<script type="application/x-javascript" src="logwin.js" />
+
+	<rows>
+		<row>
+			<label value="&smartsave.dialog.logger.label;" />
+		</row>
+		<row>	<!-- Contiene il report -->
+			<textbox multiline="true" id="smartsave_reportarea" readonly="true" cols="80" rows="20" wrap="off"/>
+		</row>
+		<row>  <!-- Bottone di salvataggio -->
+			<button label="&smartsave.dialog.logger.save;" id="smartsave_savebtn" oncommand="save();"/>
+		</row>
+	</rows>
+
+</dialog>

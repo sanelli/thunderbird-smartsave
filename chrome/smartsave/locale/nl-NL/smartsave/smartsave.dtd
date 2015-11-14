@@ -1,0 +1,103 @@
+<!-- Entity dei menu che aggiungo -->
+
+<!ENTITY smartsave.menu.file.export			"Exporteren met SmartSave">
+<!ENTITY smartsave.menu.file.export.inbox	"Postvak IN">
+<!ENTITY smartsave.menu.file.export.sent	"Verzonden">
+<!ENTITY smartsave.menu.file.export.drafts	"Concepten">
+<!ENTITY smartsave.menu.file.export.all		"Alle berichten">
+
+<!ENTITY smartsave.menu.tools.config		"SmartSave instellingen...">
+
+<!ENTITY smartsave.toolbar.label				"Smart Save">
+<!ENTITY smartsave.toolbar.tooltip				"SmartSave instellen">
+
+<!ENTITY smartsave.menu.toolbar.export.inbox	"Postvak IN exporteren">
+<!ENTITY smartsave.menu.toolbar.export.sent		"Verzonden exporteren">
+<!ENTITY smartsave.menu.toolbar.export.drafts	"Concepten exporteren">
+<!ENTITY smartsave.menu.toolbar.export.all		"Alle berichten exporteren">
+<!ENTITY smartsave.menu.toolbar.config			"SmartSave instellingen...">
+
+<!ENTITY smartsave.menu.toolbar.export.inbox.tooltip	"Alle berichten van de map Postvak IN exporteren">
+<!ENTITY smartsave.menu.toolbar.export.sent.tooltip		"Alle berichten van de map Verzonden exporteren">
+<!ENTITY smartsave.menu.toolbar.export.drafts.tooltip	"Alle berichten van de map Concepten exporteren">
+<!ENTITY smartsave.menu.toolbar.export.all.tooltip		"Alle berichten van de map Local Folders exporteren">
+<!ENTITY smartsave.menu.toolbar.config.tooltip			"Het instelvenster tonen">
+
+<!ENTITY smartsave.context.singlemail		"Dit bericht met SmartSave exporteren">
+<!ENTITY smartsave.context.folder			"Deze map met SmartSave exporteren">
+
+
+<!-- Entity Finestra di Opzioni settings.xul -->
+
+<!ENTITY smartsave.dialog.config.title		"SmartSave instellingen">
+
+<!ENTITY smartsave.dialog.config.tabs.general	"Algemeen">
+<!ENTITY smartsave.dialog.config.tabs.export	"Bestands-formaat">
+
+<!ENTITY smartsave.dialog.config.export.default	"[SUBJECT]_[SENDER]_[YEAR]-[MONTH]-[DAY]_[HOUR]-[MIN]-[SEC]">
+<!ENTITY smartsave.dialog.config.export.mode1	"[YEAR]-[MONTH]-[DAY]_[HOUR]-[MIN]-[SEC]_[SENDER]_[SUBJECT]">
+<!ENTITY smartsave.dialog.config.export.mode2	"[YEAR]-[MONTH]-[DAY]_[HOUR]-[MIN]-[SEC]_[SUBJECT]">
+<!ENTITY smartsave.dialog.config.export.mode3	"Eigen formaat">
+<!ENTITY smartsave.dialog.config.export.mode4	"[YEAR]-[MONTH]-[DAY]_[HOUR]-[MIN]-[SEC]_[SENDER]_[RECIPIENT]_[SUBJECT]">
+
+<!ENTITY smartsave.dialog.config.export.default.tooltip	"Voorbeeld: Happy Birthay_&lt;Stefano&gt;stefano@mysite.com_2006-06-03_14-22-01_">
+<!ENTITY smartsave.dialog.config.export.mode1.tooltip	"Voorbeeld: 2006-06-03_14-22-01_&lt;Stefano&gt;stefano@mysite.com_Happy Birthay">
+<!ENTITY smartsave.dialog.config.export.mode2.tooltip	"Voorbeeld: 2006-06-03_14-22-01_Happy Birthay">
+<!ENTITY smartsave.dialog.config.export.mode3.tooltip	"Uw eigen formaat instellen!">
+<!ENTITY smartsave.dialog.config.export.mode4.tooltip	"Voorbeeld: 2006-06-03_14-22-01_&lt;Stefano&gt;stefano@mysite.com_receiver@yoursite.com_Happy Birthay">
+
+<!ENTITY smartsave.dialog.config.format.label				"Eigen formaat:">
+<!ENTITY smartsave.dialog.config.basefolder.caption			"Opslaan in map:">
+<!ENTITY smartsave.dialog.config.basefolder.usethis.label	"Altijd de volgende map gebruiken:">
+<!ENTITY smartsave.dialog.config.basefolder.askme.label		"Elke keer vragen">
+<!ENTITY smartsave.dialog.config.basebolder.browse			"  Bladeren...">
+<!ENTITY smartsave.dialog.config.extension.label			"Extensie:">
+<!ENTITY smartsave.dialog.config.recurse					"Inclusief submappen">
+<!ENTITY smartsave.dialog.config.keepstruct					"Submap indeling bewaren">
+<!ENTITY smartsave.dialog.config.overwrite					"Overschrijven">
+<!ENTITY smartsave.dialog.config.advise.caption				"Bijzonderheden">
+<!ENTITY smartsave.dialog.config.beep						"Bij be&#235;indigen geluid afspelen">
+<!ENTITY smartsave.dialog.config.msg						"Bij be&#235;indigen rapport laten zien">
+
+<!ENTITY smartsave.dialog.config.format.tooltip					"Voer hier uw eigen formaat in">
+<!ENTITY smartsave.dialog.config.basefolder.tooltip				"Voer hier het pad van de doel map in">
+<!ENTITY smartsave.dialog.config.basebolder.browse.tooltip		"Kies de doel map">
+<!ENTITY smartsave.dialog.config.basefolder.usethis.tooltip		"Kies dit om altijd dezelfde doelmap te gebruiken">
+<!ENTITY smartsave.dialog.config.basefolder.askme.tooltip		"Kies dit om elke keer de doelmap op te geven">
+<!ENTITY smartsave.dialog.config.extension.tooltip				"Voer hier de extensie van de bestanden in (inclusief de punt!)">
+<!ENTITY smartsave.dialog.config.filesystem.caption				"SmartSave exporteer instellingen">
+<!ENTITY smartsave.dialog.config.recurse.tooltip				"Kies dit als ook de submappen opgeslagen moeten worden">
+<!ENTITY smartsave.dialog.config.keepstruct.tooltip				"Kies dit als ook de indeling van de submappen opgeslagen moet worden">
+<!ENTITY smartsave.dialog.config.overwrite.tooltip				"Kies dit als bestanden met dezelfde naam overschreven mogen worden">
+<!ENTITY smartsave.dialog.config.beep.tooltip					"Kies dit als SmartSave bij het be&#235;indigen een geluid moet afspelen">
+<!ENTITY smartsave.dialog.config.msg.tooltip					"Kies dit als SmartSave bij het be&#235;indigen een verslag moet laten zien">
+
+<!ENTITY smartsave.dialog.config.help.year		"Jaar">
+<!ENTITY smartsave.dialog.config.help.month		"Maand">
+<!ENTITY smartsave.dialog.config.help.day		"Dag">
+<!ENTITY smartsave.dialog.config.help.hour		"Uur">
+<!ENTITY smartsave.dialog.config.help.minute	"Minuut">
+<!ENTITY smartsave.dialog.config.help.secs		"Seconde">
+<!ENTITY smartsave.dialog.config.help.sender	"Van">
+<!ENTITY smartsave.dialog.config.help.recipient	"Aan">
+<!ENTITY smartsave.dialog.config.help.object	"Onderwerp">
+<!ENTITY smartsave.dialog.config.help.rnd		"Willekeurige tekst">
+
+<!ENTITY smartsave.dialog.config.help.year.tooltip		"Voorbeeld: 2006">
+<!ENTITY smartsave.dialog.config.help.month.tooltip		"Voorbeeld: 06">
+<!ENTITY smartsave.dialog.config.help.day.tooltip		"Voorbeeld: 03">
+<!ENTITY smartsave.dialog.config.help.hour.tooltip		"Voorbeeld: 14">
+<!ENTITY smartsave.dialog.config.help.minute.tooltip	"Voorbeeld: 22">
+<!ENTITY smartsave.dialog.config.help.secs.tooltip		"Voorbeeld: 01">
+<!ENTITY smartsave.dialog.config.help.sender.tooltip	"Voorbeeld: &lt;Stefano&gt; stefano@mysite.com">
+<!ENTITY smartsave.dialog.config.help.recipient.tooltip	"Voorbeeld: &lt;Pippo&gt; pippo@yoursite.com">
+<!ENTITY smartsave.dialog.config.help.object.tooltip	"Voorbeeld: Happy Birthday!!">
+<!ENTITY smartsave.dialog.config.help.rnd.tooltip		"Willekeurige tekst">
+
+<!ENTITY smartsave.dialog.config.help.tooltip	"Speciale tekst toevoegen">
+<!ENTITY smartsave.dialog.config.help.label		"Toevoegen">
+
+<!-- ENTITY DELLA FINESTRA DI REPORT FINALE -->
+<!ENTITY smartsave.dialog.logger.title		"SmartSave rapport">
+<!ENTITY smartsave.dialog.logger.label		"Logbestand bekijken:">
+<!ENTITY smartsave.dialog.logger.save		"Opslaan">

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+    <Description about="urn:mozilla:install-manifest">
+        <em:id>{031984cf-187c-40a2-bc8c-3ca45ccdb3e8}</em:id>
+        <em:name>SmartSave Thunderbird Extension</em:name>
+        <em:version>0.1.5.2</em:version>
+        <em:description>Now you can export your messages in a smarter way!</em:description>
+        <em:creator>Stefano Anelli (stefano.smartsave@gmail.com)</em:creator>
+	<em:iconURL>chrome://smartsave/content/smartsave.gif</em:iconURL>
+
+	<em:contributor>Matt Farey for English localization</em:contributor>
+	<em:contributor>Hans Johansson for Swdeish localization</em:contributor>
+	<em:contributor>Emiliano Deza for Spanish localization</em:contributor>
+	<em:contributor>Lionel Beard for French localization</em:contributor>
+	<em:contributor>Jan for Dutch localization</em:contributor>
+	<em:contributor>Xavier Luthi for a piece of code that solved a big bug</em:contributor>
+	<em:contributor>ildflue for a piece of code that let SmartSave works better with void subject</em:contributor>
+	<em:contributor>ilmaio for a piece of code that let SmartSave works better</em:contributor>
+	<em:contributor>BabelZilla Translators</em:contributor>
+
+        <em:file>
+            <Description about="urn:mozilla:extension:file:smartsave.jar">
+                <em:package>content/smartsave/</em:package>
+                <em:locale>locale/en-US/smartsave/</em:locale>
+                <em:locale>locale/it-IT/smartsave/</em:locale>
+				<em:locale>locale/sv-SE/smartsave/</em:locale>
+				<em:locale>locale/es-ES/smartsave/</em:locale>
+				<em:locale>locale/fr-FR/smartsave/</em:locale>
+				<em:locale>locale/nl-NL/smartsave/</em:locale>
+				<em:locale>locale/cs-CZ/smartsave/</em:locale>
+				<em:locale>locale/zh-CN/smartsave/</em:locale>
+				<em:locale>locale/ru-RU/smartsave/</em:locale>
+            </Description>
+        </em:file>
+        <em:optionsURL>chrome://smartsave/content/settings.xul</em:optionsURL>
+        <em:targetApplication>
+            <Description>
+                <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
+                <em:minVersion>0.8</em:minVersion>
+                <em:maxVersion>2.0.0.*</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+    </Description>
+</RDF>

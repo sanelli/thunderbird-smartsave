@@ -1,0 +1,82 @@
+<!ENTITY smartsave.menu.file.export "Экспортировать через SmartSave">
+<!ENTITY smartsave.menu.file.export.inbox "«Входящие»">
+<!ENTITY smartsave.menu.file.export.sent "«Отправленные»">
+<!ENTITY smartsave.menu.file.export.drafts "«Черновики»">
+<!ENTITY smartsave.menu.file.export.all "Все сообщения">
+<!ENTITY smartsave.menu.tools.config "Настроить SmartSave">
+<!ENTITY smartsave.toolbar.label "SmartSave">
+<!ENTITY smartsave.toolbar.tooltip "Настроить SmartSave">
+<!ENTITY smartsave.menu.toolbar.export.inbox "Экспортировать «Входящие»">
+<!ENTITY smartsave.menu.toolbar.export.sent "Экспортировать «Отправленные»">
+<!ENTITY smartsave.menu.toolbar.export.drafts "Экспортировать «Черновики»">
+<!ENTITY smartsave.menu.toolbar.export.all "Экспортировать все сообщения">
+<!ENTITY smartsave.menu.toolbar.config "Настроить SmartSave…">
+<!ENTITY smartsave.menu.toolbar.export.inbox.tooltip "Экспортировать все сообщения в папку «Входящие».">
+<!ENTITY smartsave.menu.toolbar.export.sent.tooltip "Экспортировать все сообщения в папку «Отправленные»">
+<!ENTITY smartsave.menu.toolbar.export.drafts.tooltip "Экспортировать все сообщения в папку «Черновики»">
+<!ENTITY smartsave.menu.toolbar.export.all.tooltip "Экспортировать все сообщения в «Локальные папки»">
+<!ENTITY smartsave.menu.toolbar.config.tooltip "Показать окно настроек">
+<!ENTITY smartsave.context.singlemail "Экспортировать это сообщение через SmartSave">
+<!ENTITY smartsave.context.folder "Экспортировать эту папку через SmartSave">
+<!ENTITY smartsave.dialog.config.title "Настройка SmartSave">
+<!ENTITY smartsave.dialog.config.tabs.general "Общие">
+<!ENTITY smartsave.dialog.config.tabs.export "Формат файла">
+<!ENTITY smartsave.dialog.config.export.default "[SUBJECT]_[SENDER]_[YEAR]-[MONTH]-[DAY]_[HOUR]-[MIN]-[SEC]">
+<!ENTITY smartsave.dialog.config.export.mode1 "[YEAR]-[MONTH]-[DAY]_[HOUR]-[MIN]-[SEC]_[SENDER]_[SUBJECT]">
+<!ENTITY smartsave.dialog.config.export.mode2 "[YEAR]-[MONTH]-[DAY]_[HOUR]-[MIN]-[SEC]_[SUBJECT]">
+<!ENTITY smartsave.dialog.config.export.mode3 "Определённый пользователем">
+<!ENTITY smartsave.dialog.config.export.mode4 "[YEAR]-[MONTH]-[DAY]_[HOUR]-[MIN]-[SEC]_[SENDER]_[RECIPIENT]_[SUBJECT]">
+<!ENTITY smartsave.dialog.config.export.default.tooltip "Например: С Днём Рождения_&lt;Стефано&gt;стефано@мой.сайт_2006-06-03_14-22-01_">
+<!ENTITY smartsave.dialog.config.export.mode1.tooltip "Например: 2006-06-03_14-22-01_&lt;Стефано&gt;стефано@мой.сайт_С Днём Рождения">
+<!ENTITY smartsave.dialog.config.export.mode2.tooltip "Например: 2006-06-03_14-22-01_С Днём Рождения">
+<!ENTITY smartsave.dialog.config.export.mode3.tooltip "Определите свой собственный формат!">
+<!ENTITY smartsave.dialog.config.export.mode4.tooltip "Например: 2006-06-03_14-22-01_&lt;Стефано&gt;стефано@мой.сайт_получатель@ваш.сайт_С Днём Рождения">
+<!ENTITY smartsave.dialog.config.format.label "Определённый пользователем формат">
+<!ENTITY smartsave.dialog.config.basefolder.caption "Целевая папка:">
+<!ENTITY smartsave.dialog.config.basefolder.usethis.label "Всегда использовать следующую папку:">
+<!ENTITY smartsave.dialog.config.basefolder.askme.label "Спрашивать каждый раз">
+<!ENTITY smartsave.dialog.config.basebolder.browse "Обзор…">
+<!ENTITY smartsave.dialog.config.extension.label "Расширение:">
+<!ENTITY smartsave.dialog.config.recurse "Включая вложенные папки">
+<!ENTITY smartsave.dialog.config.keepstruct "С сохранением структуры папок">
+<!ENTITY smartsave.dialog.config.overwrite "Перезаписывать">
+<!ENTITY smartsave.dialog.config.advise.caption "Оповещение">
+<!ENTITY smartsave.dialog.config.beep "По окончании проиграть мелодию">
+<!ENTITY smartsave.dialog.config.msg "По окончании показать отчёт">
+<!ENTITY smartsave.dialog.config.format.tooltip "Вставить сюда ваш собственный формат">
+<!ENTITY smartsave.dialog.config.basefolder.tooltip "Вставить сюда путь к целевой папке">
+<!ENTITY smartsave.dialog.config.basebolder.browse.tooltip "Выбрать прежнюю целевую папку">
+<!ENTITY smartsave.dialog.config.basefolder.usethis.tooltip "Выберите эту настройку, чтобы всегда использовать ту же самую целевую папку">
+<!ENTITY smartsave.dialog.config.basefolder.askme.tooltip "Выберите эту настройку, если хотите задать целевую папку">
+<!ENTITY smartsave.dialog.config.extension.tooltip "Введите здесь расширение вашего файла (вместе с точкой)">
+<!ENTITY smartsave.dialog.config.filesystem.caption "Настройки экспорта">
+<!ENTITY smartsave.dialog.config.recurse.tooltip "Поставьте флажок, если хотите включить вложенные папки">
+<!ENTITY smartsave.dialog.config.keepstruct.tooltip "Поставьте флажок, если хотите сохранить структуру папки и вложенных папок">
+<!ENTITY smartsave.dialog.config.overwrite.tooltip "Поставьте флажок, если хотите перезаписывать существующие файлы с совпадающими именами">
+<!ENTITY smartsave.dialog.config.beep.tooltip "Поставьте флажок, если хотите чтобы по окончании работы SmartSave проигрывала мелодию">
+<!ENTITY smartsave.dialog.config.msg.tooltip "Поставьте флажок, если хотите чтобы по окончании работы SmartSave выводила отчёт">
+<!ENTITY smartsave.dialog.config.help.year "Год">
+<!ENTITY smartsave.dialog.config.help.month "Месяц">
+<!ENTITY smartsave.dialog.config.help.day "День">
+<!ENTITY smartsave.dialog.config.help.hour "Часы">
+<!ENTITY smartsave.dialog.config.help.minute "Минуты">
+<!ENTITY smartsave.dialog.config.help.secs "Секунды">
+<!ENTITY smartsave.dialog.config.help.sender "Отправитель">
+<!ENTITY smartsave.dialog.config.help.recipient "Получатель">
+<!ENTITY smartsave.dialog.config.help.object "Тема">
+<!ENTITY smartsave.dialog.config.help.rnd "Произвольная строка">
+<!ENTITY smartsave.dialog.config.help.year.tooltip "Например: 2006">
+<!ENTITY smartsave.dialog.config.help.month.tooltip "Например: 06">
+<!ENTITY smartsave.dialog.config.help.day.tooltip "Например: 03">
+<!ENTITY smartsave.dialog.config.help.hour.tooltip "Например: 14">
+<!ENTITY smartsave.dialog.config.help.minute.tooltip "Например: 22">
+<!ENTITY smartsave.dialog.config.help.secs.tooltip "Например: 01">
+<!ENTITY smartsave.dialog.config.help.sender.tooltip "Например: &lt;Стефано&gt; стефано@мой.сайт">
+<!ENTITY smartsave.dialog.config.help.recipient.tooltip "Например: &lt;Пиппо&gt; пиппо@ваш.сайт">
+<!ENTITY smartsave.dialog.config.help.object.tooltip "Например: С Днём Рождения!!">
+<!ENTITY smartsave.dialog.config.help.rnd.tooltip "Произвольная строка">
+<!ENTITY smartsave.dialog.config.help.tooltip "Добавить особенную строку">
+<!ENTITY smartsave.dialog.config.help.label "Добавить">
+<!ENTITY smartsave.dialog.logger.title "Отчёт SmartSave">
+<!ENTITY smartsave.dialog.logger.label "Здесь можно увидеть журнал экспортирования:">
+<!ENTITY smartsave.dialog.logger.save "Сохранить">

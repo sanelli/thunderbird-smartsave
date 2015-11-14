@@ -1,0 +1,82 @@
+<!ENTITY smartsave.menu.file.export "Exportovat pomocí SmartSave">
+<!ENTITY smartsave.menu.file.export.inbox "Doručená pošta">
+<!ENTITY smartsave.menu.file.export.sent "Odeslané zprávy">
+<!ENTITY smartsave.menu.file.export.drafts "Koncepty">
+<!ENTITY smartsave.menu.file.export.all "Všechny zprávy">
+<!ENTITY smartsave.menu.tools.config "Nastavit SmartSave...">
+<!ENTITY smartsave.toolbar.label "Smart Save">
+<!ENTITY smartsave.toolbar.tooltip "Nastavit SmartSave">
+<!ENTITY smartsave.menu.toolbar.export.inbox "Exportovat doručenou poštu">
+<!ENTITY smartsave.menu.toolbar.export.sent "Exportovat odeslané zprávy">
+<!ENTITY smartsave.menu.toolbar.export.drafts "Exportovat koncepty">
+<!ENTITY smartsave.menu.toolbar.export.all "Exportovat všechny zprávy">
+<!ENTITY smartsave.menu.toolbar.config "Nastavit SmartSave...">
+<!ENTITY smartsave.menu.toolbar.export.inbox.tooltip "Exportovat všechny zprávy ve složce Doručená pošta">
+<!ENTITY smartsave.menu.toolbar.export.sent.tooltip "Exportovat všechny zprávy ve složce Odeslané zprávy">
+<!ENTITY smartsave.menu.toolbar.export.drafts.tooltip "Exportovat všechny zprávy ve složce Koncepty">
+<!ENTITY smartsave.menu.toolbar.export.all.tooltip "Exportovat všechny zprávy v Místních složkách">
+<!ENTITY smartsave.menu.toolbar.config.tooltip "Zobrazit okno nastavení">
+<!ENTITY smartsave.context.singlemail "Exportovat tuto zprávu pomocí SmartSave">
+<!ENTITY smartsave.context.folder "Exportovat tuto složku pomocí SmartSave">
+<!ENTITY smartsave.dialog.config.title "Nastavení SmartSave">
+<!ENTITY smartsave.dialog.config.tabs.general "Hlavní nastavení">
+<!ENTITY smartsave.dialog.config.tabs.export "Formátu souboru">
+<!ENTITY smartsave.dialog.config.export.default "[SUBJECT]_[SENDER]_[YEAR]-[MONTH]-[DAY]_[HOUR]-[MIN]-[SEC]">
+<!ENTITY smartsave.dialog.config.export.mode1 "[YEAR]-[MONTH]-[DAY]_[HOUR]-[MIN]-[SEC]_[SENDER]_[SUBJECT]">
+<!ENTITY smartsave.dialog.config.export.mode2 "[YEAR]-[MONTH]-[DAY]_[HOUR]-[MIN]-[SEC]_[SUBJECT]">
+<!ENTITY smartsave.dialog.config.export.mode3 "Definováno uživatelem">
+<!ENTITY smartsave.dialog.config.export.mode4 "[YEAR]-[MONTH]-[DAY]_[HOUR]-[MIN]-[SEC]_[SENDER]_[RECIPIENT]_[SUBJECT]">
+<!ENTITY smartsave.dialog.config.export.default.tooltip "Například: Šťastné narozeniny_&lt;Stefano&gt;stefano@mojestranka.cz_2006-06-03_14-22-01_">
+<!ENTITY smartsave.dialog.config.export.mode1.tooltip "Například: 2006-06-03_14-22-01_&lt;Stefano&gt;stefano@mojestranka.cz_Šťastné narozeniny">
+<!ENTITY smartsave.dialog.config.export.mode2.tooltip "Například: 2006-06-03_14-22-01_Šťastné narozeniny">
+<!ENTITY smartsave.dialog.config.export.mode3.tooltip "Definujte svůj vlastní formát!">
+<!ENTITY smartsave.dialog.config.export.mode4.tooltip "Například: 2006-06-03_14-22-01_&lt;Stefano&gt;stefano@mysite.com_receiver@vasestranka.cz_Šťastné narozeniny">
+<!ENTITY smartsave.dialog.config.format.label "Formát definovaný uživatelem:">
+<!ENTITY smartsave.dialog.config.basefolder.caption "Cílová složka:">
+<!ENTITY smartsave.dialog.config.basefolder.usethis.label "Vždy použít následující složku:">
+<!ENTITY smartsave.dialog.config.basefolder.askme.label "Pokaždé se mě dotázat">
+<!ENTITY smartsave.dialog.config.basebolder.browse "Procházet...">
+<!ENTITY smartsave.dialog.config.extension.label "Přípona:">
+<!ENTITY smartsave.dialog.config.recurse "Zahrnout podsložky">
+<!ENTITY smartsave.dialog.config.keepstruct "Zachovat strukturu podsložek">
+<!ENTITY smartsave.dialog.config.overwrite "Přepsat">
+<!ENTITY smartsave.dialog.config.advise.caption "Oznámení">
+<!ENTITY smartsave.dialog.config.beep "Přehrát zvuk po dokončení">
+<!ENTITY smartsave.dialog.config.msg "Zobrazit hlášení po dokončení">
+<!ENTITY smartsave.dialog.config.format.tooltip "Svůj vlastní formát vložte zde">
+<!ENTITY smartsave.dialog.config.basefolder.tooltip "Zde vložte cestu vaší cílové složky">
+<!ENTITY smartsave.dialog.config.basebolder.browse.tooltip "Vybrat cíl později">
+<!ENTITY smartsave.dialog.config.basefolder.usethis.tooltip "Vyberte tuto možnost v případě, že chcete vždy použít stejnou cílovou složku">
+<!ENTITY smartsave.dialog.config.basefolder.askme.tooltip "Vyberte tuto možnost v případě, že chcete vždy vybrat cílovou složku">
+<!ENTITY smartsave.dialog.config.extension.tooltip "Zde zadejte přípony vašich souborů (obsahuje tečky!)">
+<!ENTITY smartsave.dialog.config.filesystem.caption "Možnosti exportu">
+<!ENTITY smartsave.dialog.config.recurse.tooltip "Zaškrtněte tuto položku v případě, že chcete do exportu zahrnout i podsložky">
+<!ENTITY smartsave.dialog.config.keepstruct.tooltip "Zaškrtněte tuto položku v případě, že chcete zachovat strukturu vašich složek, když do exportu zahrnete i podsložky">
+<!ENTITY smartsave.dialog.config.overwrite.tooltip "Zaškrtněte tuto položku v případě, že chcete přepsat existující soubory se stejným názvem">
+<!ENTITY smartsave.dialog.config.beep.tooltip "Zaškrtněte tuto položku v případě, že chcete být upozorněni na dokončení exportování přehráním zvuku">
+<!ENTITY smartsave.dialog.config.msg.tooltip "Zaškrtněte tuto položku v případě, že chcete po dokončení exportování zobrazit zprávu">
+<!ENTITY smartsave.dialog.config.help.year "Rok">
+<!ENTITY smartsave.dialog.config.help.month "Měsíc">
+<!ENTITY smartsave.dialog.config.help.day "Den">
+<!ENTITY smartsave.dialog.config.help.hour "Hodiny">
+<!ENTITY smartsave.dialog.config.help.minute "minuty">
+<!ENTITY smartsave.dialog.config.help.secs "Sekundy">
+<!ENTITY smartsave.dialog.config.help.sender "Odesílatel">
+<!ENTITY smartsave.dialog.config.help.recipient "Příjemce">
+<!ENTITY smartsave.dialog.config.help.object "Předmět">
+<!ENTITY smartsave.dialog.config.help.rnd "Náhodný řetězec">
+<!ENTITY smartsave.dialog.config.help.year.tooltip "Příklad: 2006">
+<!ENTITY smartsave.dialog.config.help.month.tooltip "Příklad: 06">
+<!ENTITY smartsave.dialog.config.help.day.tooltip "Příklad: 06">
+<!ENTITY smartsave.dialog.config.help.hour.tooltip "Příklad: 14">
+<!ENTITY smartsave.dialog.config.help.minute.tooltip "Příklad: 22">
+<!ENTITY smartsave.dialog.config.help.secs.tooltip "Příklad: 01">
+<!ENTITY smartsave.dialog.config.help.sender.tooltip "Příklad: &lt;Stefano&gt; stefano@mojestranka.cz">
+<!ENTITY smartsave.dialog.config.help.recipient.tooltip "Příklad: &lt;Pippo&gt; pippo@vasestranka.cz">
+<!ENTITY smartsave.dialog.config.help.object.tooltip "Příklad: Šťastné narozeniny!!">
+<!ENTITY smartsave.dialog.config.help.rnd.tooltip "Náhodný řetězec">
+<!ENTITY smartsave.dialog.config.help.tooltip "Přidat zvláštní řetězec">
+<!ENTITY smartsave.dialog.config.help.label "Přidat">
+<!ENTITY smartsave.dialog.logger.title "SmartSave - Zpráva">
+<!ENTITY smartsave.dialog.logger.label "Zde si můžete přečíst záznam exportu:">
+<!ENTITY smartsave.dialog.logger.save "Uložit">

@@ -1,0 +1,102 @@
+<!-- Entity dei menu che aggiungo -->
+<!ENTITY smartsave.menu.file.export			"Exportera med SmartSave">
+<!ENTITY smartsave.menu.file.export.inbox	"Inkorgen">
+<!ENTITY smartsave.menu.file.export.sent	"Skickat">
+<!ENTITY smartsave.menu.file.export.drafts	"Utkast">
+<!ENTITY smartsave.menu.file.export.all		"Alla meddelanden">
+
+<!ENTITY smartsave.menu.tools.config		"Konfigurera SmartSave...">
+
+<!ENTITY smartsave.toolbar.label				"Smart Save">
+<!ENTITY smartsave.toolbar.tooltip				"Konfigurera SmartSave">
+
+<!ENTITY smartsave.menu.toolbar.export.inbox	"Exportera Inkorgen">
+<!ENTITY smartsave.menu.toolbar.export.sent		"Exportera Skickat">
+<!ENTITY smartsave.menu.toolbar.export.drafts	"Exportera Utkast">
+<!ENTITY smartsave.menu.toolbar.export.all		"Exportera Alla meddelanden">
+<!ENTITY smartsave.menu.toolbar.config			"Konfigurera SmartSave...">
+
+<!ENTITY smartsave.menu.toolbar.export.inbox.tooltip	"Exportera alla meddelanden i Inkorgen mappen">
+<!ENTITY smartsave.menu.toolbar.export.sent.tooltip		"Exportera alla meddelanden i Skickat mappen">
+<!ENTITY smartsave.menu.toolbar.export.drafts.tooltip	"Exportera alla meddelanden i Utkast mappen">
+<!ENTITY smartsave.menu.toolbar.export.all.tooltip		"Exportera alla meddelanden i Lokala mappar">
+<!ENTITY smartsave.menu.toolbar.config.tooltip			"Visa konfigureringsf&#xf6;nstret">
+
+<!ENTITY smartsave.context.singlemail		"Exportera detta meddelande med SmartSave">
+<!ENTITY smartsave.context.folder			"Exportera denna mapp med SmartSave">
+
+
+<!-- Entity Finestra di Opzioni settings.xul -->
+
+<!ENTITY smartsave.dialog.config.title		"SmartSave Konfigurering">
+
+<!ENTITY smartsave.dialog.config.tabs.general	"Allm&#xe4;nna inst&#xe4;llningar">
+<!ENTITY smartsave.dialog.config.tabs.export	"Inst&#xe4;llningar f&#xf6;r filformat">
+
+<!ENTITY smartsave.dialog.config.export.default	"[SUBJECT]_[SENDER]_[YEAR]-[MONTH]-[DAY]_[HOUR]-[MIN]-[SEC]">
+<!ENTITY smartsave.dialog.config.export.mode1	"[YEAR]-[MONTH]-[DAY]_[HOUR]-[MIN]-[SEC]_[SENDER]_[SUBJECT]">
+<!ENTITY smartsave.dialog.config.export.mode2	"[YEAR]-[MONTH]-[DAY]_[HOUR]-[MIN]-[SEC]_[SUBJECT]">
+<!ENTITY smartsave.dialog.config.export.mode3	"Anv&#xe4;ndardefinierat">
+<!ENTITY smartsave.dialog.config.export.mode4	"[YEAR]-[MONTH]-[DAY]_[HOUR]-[MIN]-[SEC]_[SENDER]_[RECIPIENT]_[SUBJECT]">
+
+<!ENTITY smartsave.dialog.config.export.default.tooltip	"Exempel: Happy Birthay_&lt;Stefano&gt;stefano@mysite.com_2006-06-03_14-22-01_">
+<!ENTITY smartsave.dialog.config.export.mode1.tooltip	"Exempel: 2006-06-03_14-22-01_&lt;Stefano&gt;stefano@mysite.com_Happy Birthay">
+<!ENTITY smartsave.dialog.config.export.mode2.tooltip	"Exempel: 2006-06-03_14-22-01_Happy Birthay">
+<!ENTITY smartsave.dialog.config.export.mode3.tooltip	"Definiera ditt eget format!">
+<!ENTITY smartsave.dialog.config.export.mode4.tooltip	"Exempel: 2006-06-03_14-22-01_&lt;Stefano&gt;stefano@mysite.com_receiver@yoursite.com_Happy Birthay">
+
+<!ENTITY smartsave.dialog.config.format.label				"Anv&#xe4;ndardefinierat format:">
+<!ENTITY smartsave.dialog.config.basefolder.caption			"SmartSave exportmapp:">
+<!ENTITY smartsave.dialog.config.basefolder.usethis.label	"Anv&#xe4;nd alltid denna exportmapp:">
+<!ENTITY smartsave.dialog.config.basefolder.askme.label		"Fr&#xe5;ga varje g&#xe5;ng">
+<!ENTITY smartsave.dialog.config.basebolder.browse			"  Bl&#xe4;ddra...">
+<!ENTITY smartsave.dialog.config.extension.label			"Fil&#xe4;ndelse:">
+<!ENTITY smartsave.dialog.config.recurse					"Inkludera undermappar">
+<!ENTITY smartsave.dialog.config.keepstruct					"Bevara strukturen hos undermappar">
+<!ENTITY smartsave.dialog.config.overwrite					"Skriv &#xf6;ver">
+<!ENTITY smartsave.dialog.config.advise.caption				"Meddelande">
+<!ENTITY smartsave.dialog.config.beep						"Spela upp ett ljud n&#xe4;r klar">
+<!ENTITY smartsave.dialog.config.msg						"Visa rapport n&#xe4;r klar">
+
+<!ENTITY smartsave.dialog.config.format.tooltip					"Mata in ditt eget format h&#xe4;r">
+<!ENTITY smartsave.dialog.config.basefolder.tooltip				"Mata in s&#xf6;kv&#xe4;gen till din exportmap h&#xe4;r">
+<!ENTITY smartsave.dialog.config.basebolder.browse.tooltip		"V&#xe4;lj exportmapp">
+<!ENTITY smartsave.dialog.config.basefolder.usethis.tooltip		"V&#xe4;lj denna f&#xf6;r att alltid anv&#xe4;nda samma exportmapp">
+<!ENTITY smartsave.dialog.config.basefolder.askme.tooltip		"V&#xe4;lj denna om Du vill ange din exportmapp">
+<!ENTITY smartsave.dialog.config.extension.tooltip				"Mata in fil&#xe4;ndelsen f&#xf6;r dina exportfiler h&#xe4;r (inklusive punkten!)">
+<!ENTITY smartsave.dialog.config.filesystem.caption				"SmartSave Export Inst&#xe4;llningar">
+<!ENTITY smartsave.dialog.config.recurse.tooltip				"Klicka f&#xf6;r denna om Du vill inkludera undermappar">
+<!ENTITY smartsave.dialog.config.keepstruct.tooltip				"Klicka f&#xf6;r denna om Du vill bevara strukturen hos undermappar n&#xe4;r Du inkluderar undermappar">
+<!ENTITY smartsave.dialog.config.overwrite.tooltip				"Klicka f&#xf6;r denna om Du vill skriva &#xf6;ver filer med samma namn">
+<!ENTITY smartsave.dialog.config.beep.tooltip					"Klicka f&#xf6;r denna om Du vill att SmartSave skall meddela med ett ljud n&#xe4;r exporten &#xe4;r klar">
+<!ENTITY smartsave.dialog.config.msg.tooltip					"Klicka f&#xf6;r denna om Du vill att SmartSave skall visa en rapport n&#xe4;r exporten &#xe4;r klar">
+
+<!ENTITY smartsave.dialog.config.help.year		"&#xc5;r">
+<!ENTITY smartsave.dialog.config.help.month		"M&#xe5;nad">
+<!ENTITY smartsave.dialog.config.help.day		"Dag">
+<!ENTITY smartsave.dialog.config.help.hour		"Timmar">
+<!ENTITY smartsave.dialog.config.help.minute	"Minuter">
+<!ENTITY smartsave.dialog.config.help.secs		"Sekunder">
+<!ENTITY smartsave.dialog.config.help.sender	"Avs&#xe4;ndare">
+<!ENTITY smartsave.dialog.config.help.recipient	"Mottagare">
+<!ENTITY smartsave.dialog.config.help.object	"&#xc4;rende">
+<!ENTITY smartsave.dialog.config.help.rnd		"Slumpm&#xe4;ssig str&#xe4;ng">
+
+<!ENTITY smartsave.dialog.config.help.year.tooltip		"Exempel: 2006">
+<!ENTITY smartsave.dialog.config.help.month.tooltip		"Exempel: 06">
+<!ENTITY smartsave.dialog.config.help.day.tooltip		"Exempel: 03">
+<!ENTITY smartsave.dialog.config.help.hour.tooltip		"Exempel: 14">
+<!ENTITY smartsave.dialog.config.help.minute.tooltip	"Exempel: 22">
+<!ENTITY smartsave.dialog.config.help.secs.tooltip		"Exempel: 01">
+<!ENTITY smartsave.dialog.config.help.sender.tooltip	"Exempel: &lt;Stefano&gt; stefano@mysite.com">
+<!ENTITY smartsave.dialog.config.help.recipient.tooltip	"Exempel: &lt;Pippo&gt; pippo@yoursite.com">
+<!ENTITY smartsave.dialog.config.help.object.tooltip	"Exempel: Happy Birthday!!">
+<!ENTITY smartsave.dialog.config.help.rnd.tooltip		"Slumpm&#xe4;ssig str&#xe4;ng">
+
+<!ENTITY smartsave.dialog.config.help.tooltip	"L&#xe4;gg till en speciell str&#xe4;ng">
+<!ENTITY smartsave.dialog.config.help.label		"L&#xe4;gg till">
+
+<!-- ENTITY DELLA FINESTRA DI REPORT FINALE -->
+<!ENTITY smartsave.dialog.logger.title		"SmartSave Rapport">
+<!ENTITY smartsave.dialog.logger.label		"H&#xe4;r kan Du se exportloggen:">
+<!ENTITY smartsave.dialog.logger.save		"Spara">

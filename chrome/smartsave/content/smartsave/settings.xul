@@ -1,0 +1,174 @@
+<?xml version="1.0"?> 
+
+<!-- Carico gli stili da utilizzare-->
+<?xml-stylesheet href="chrome://communicator/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://messenger/skin/prefPanels.css" type="text/css"?> 
+
+<!-- Carico il DTD con le stringhe localizzate -->
+<!DOCTYPE dialog SYSTEM "chrome://smartsave/locale/smartsave.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	        buttons="accept, cancel"  
+		title="&smartsave.dialog.config.title;"
+		id="smartsave-settings"
+		orient="vertical" flex="0"
+		persist="screenX screenY width height"
+		onload="init();"
+		ondialogaccept="savePref();">
+
+	<!-- Importo lo script -->
+	<script type="application/x-javascript" src="settings.js" />
+
+<!-- Inserisco per comodità di visualizzazione un tabbed pane -->
+<tabbox>
+	<tabs> <!-- Dichiaro i nomi del panelli -->
+		<tab label="&smartsave.dialog.config.tabs.general;" />
+		<tab label="&smartsave.dialog.config.tabs.export;" />
+	</tabs>
+	<tabpanels> <!-- Inserisco effettivamente i panelli -->
+
+		 <!-- Pannello che contiene le impostazioni generali -->
+		<tabpanel orient="vertical">
+			<groupbox>	<!-- Impostazione percorso base -->
+				
+				<caption label="&smartsave.dialog.config.basefolder.caption;" />
+
+				<radiogroup id="smartsave_export_basefolder">
+					<radio id="optionExport_askpath"
+						label="&smartsave.dialog.config.basefolder.askme.label;" 
+						tooltiptext="&smartsave.dialog.config.basefolder.askme.tooltip;" 
+						oncommand="enablePath();"/>
+					<radio id="optionExport_dontaskpath"
+						label="&smartsave.dialog.config.basefolder.usethis.label;"
+						tooltiptext="&smartsave.dialog.config.basefolder.usethis.tooltip;" 
+						oncommand="enablePath();"/>
+				</radiogroup>
+				<hbox>
+					<textbox id="optionExport_basefolder" height="25" width="300" readonly="true"
+						tooltiptext="&smartsave.dialog.config.basefolder.tooltip;" />
+					<button id="optionExport_basefolder_browse"
+						label="&smartsave.dialog.config.basebolder.browse;" 
+						image="chrome://smartsave/content/folder.gif"
+						tooltiptext="&smartsave.dialog.config.basebolder.browse.tooltip;"
+						oncommand="selectBasefolder();" />
+				</hbox>
+
+			</groupbox>
+
+			<spacer height="10" />	
+			<groupbox> <!-- Impostazione export furbe -->
+				<caption label="&smartsave.dialog.config.filesystem.caption;" />
+				<checkbox id="optionExport_recurse" 
+					label="&smartsave.dialog.config.recurse;" 
+					tooltiptext="&smartsave.dialog.config.recurse.tooltip;" 
+					oncommand="endis_keepstruct();" />
+				<checkbox id="optionExport_keepstruct" 
+					label="&smartsave.dialog.config.keepstruct;" 
+					tooltiptext="&smartsave.dialog.config.keepstruct.tooltip;"/>
+				<checkbox id="optionExport_overwrite" 
+					label="&smartsave.dialog.config.overwrite;" 
+					tooltiptext="&smartsave.dialog.config.overwrite.tooltip;"/>
+			</groupbox>
+
+			<spacer height="10" />	
+			<groupbox> <!-- Gestione degli avvisi -->
+				<caption label="&smartsave.dialog.config.advise.caption;" />
+
+				<checkbox id="optionExport_Beep" 
+					label="&smartsave.dialog.config.beep;"
+					tooltiptext="&smartsave.dialog.config.beep.tooltip;" />
+
+				<checkbox id="optionExport_Alert" 
+					label="&smartsave.dialog.config.msg;"
+					tooltiptext="&smartsave.dialog.config.msg.tooltip;" />
+			</groupbox>
+
+
+			<spacer height="10" />	
+			<hbox> <!-- Impostazione estensione -->
+				<label value="&smartsave.dialog.config.extension.label;" />
+				<textbox id="optionExport_extension" height="25" width="300"
+					tooltiptext="&smartsave.dialog.config.extension.tooltip;"/>			
+			</hbox>
+
+		</tabpanel>
+
+		<!-- Panel che contiene la gestione del formato -->
+		<tabpanel orient="vertical"> 
+
+			<radiogroup id="smartsave_export_format">
+				<radio id="optionExport_default" 
+					label="&smartsave.dialog.config.export.default;" 
+					tooltiptext="&smartsave.dialog.config.export.default.tooltip;"
+					oncommand="enableFormat();"/>
+				<radio id="optionExport_one" 
+					label="&smartsave.dialog.config.export.mode1;" 
+					tooltiptext="&smartsave.dialog.config.export.mode1.tooltip;"
+					oncommand="enableFormat();"/>
+				<radio id="optionExport_two" 
+					label="&smartsave.dialog.config.export.mode2;" 
+					tooltiptext="&smartsave.dialog.config.export.mode2.tooltip;"
+					oncommand="enableFormat();"/>
+				<radio id="optionExport_four" 
+					label="&smartsave.dialog.config.export.mode4;" 
+					tooltiptext="&smartsave.dialog.config.export.mode4.tooltip;"
+					oncommand="enableFormat();"/>
+				<radio id="optionExport_three" 
+					label="&smartsave.dialog.config.export.mode3;" 
+					tooltiptext="&smartsave.dialog.config.export.mode3.tooltip;"
+					oncommand="enableFormat();" />
+			</radiogroup>
+
+			<spacer height="10" />
+			<label value="&smartsave.dialog.config.format.label;" />
+			<hbox>
+				<textbox id="optionExport_personal" height="25" width="300" />
+				<button  id="optionExport_helpButton" 
+					label="&smartsave.dialog.config.help.label;"
+					tooltiptext="&smartsave.dialog.config.help.tooltip;"
+					oncommand="showHelpPopup();">
+
+					<!-- Menu personale che mi è utile per aggiungere delle funzioni -->
+					<menupopup id="optionExport_helpmenu">
+						<menuitem label="&smartsave.dialog.config.help.year;" 
+							tooltiptext="&smartsave.dialog.config.help.year.tooltip;" 
+							oncommand="helpInsert('[YEAR]');" />
+						<menuitem label="&smartsave.dialog.config.help.month;"
+							tooltiptext="&smartsave.dialog.config.help.month.tooltip;" 
+							oncommand="helpInsert('[MONTH]');" />
+						<menuitem label="&smartsave.dialog.config.help.day;" 
+							tooltiptext="&smartsave.dialog.config.help.day.tooltip;" 
+							oncommand="helpInsert('[DAY]');" />
+						<menuseparator />
+						<menuitem label="&smartsave.dialog.config.help.hour;" 
+							tooltiptext="&smartsave.dialog.config.help.hour.tooltip;" 
+							oncommand="helpInsert('[HOUR]');" />
+						<menuitem label="&smartsave.dialog.config.help.minute;"
+							tooltiptext="&smartsave.dialog.config.help.minute.tooltip;" 
+							oncommand="helpInsert('[MIN]');" />
+						<menuitem label="&smartsave.dialog.config.help.secs;"
+							tooltiptext="&smartsave.dialog.config.help.secs.tooltip;" 
+							oncommand="helpInsert('[SEC]');" />
+						<menuseparator />
+						<menuitem label="&smartsave.dialog.config.help.sender;" 
+							tooltiptext="&smartsave.dialog.config.help.sender.tooltip;" 
+							oncommand="helpInsert('[SENDER]');" />
+						<menuitem label="&smartsave.dialog.config.help.recipient;"
+							tooltiptext="&smartsave.dialog.config.help.recipient.tooltip;" 
+							oncommand="helpInsert('[RECIPIENT]');" />
+						<menuitem label="&smartsave.dialog.config.help.object;" 
+							tooltiptext="&smartsave.dialog.config.help.object.tooltip;" 
+							oncommand="helpInsert('[SUBJECT]');"  />
+						<menuseparator />
+						<menuitem label="&smartsave.dialog.config.help.rnd;"
+							tooltiptext="&smartsave.dialog.config.help.rnd.tooltip;"
+							oncommand="helpInsert('[RANDOM]');"  />
+					</menupopup>
+
+				</button>
+			</hbox>
+		</tabpanel>
+	</tabpanels>
+</tabbox>
+
+</dialog>

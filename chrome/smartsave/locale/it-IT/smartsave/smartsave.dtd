@@ -1,0 +1,104 @@
+<!-- Entity dei menu che aggiungo -->
+
+<!ENTITY smartsave.menu.file.export			"Esporta con SmartSave">
+<!ENTITY smartsave.menu.file.export.inbox	"Posta in arrivo">
+<!ENTITY smartsave.menu.file.export.sent	"Posta inviata">
+<!ENTITY smartsave.menu.file.export.drafts	"Bozze">
+<!ENTITY smartsave.menu.file.export.all		"Tutti i messaggi">
+
+<!ENTITY smartsave.menu.tools.config		"Configura SmartSave...">
+
+<!ENTITY smartsave.toolbar.label				"Smart Save">
+<!ENTITY smartsave.toolbar.tooltip				"Configura Smart Save">
+
+<!ENTITY smartsave.menu.toolbar.export.inbox	"Esporta posta in arrivo">
+<!ENTITY smartsave.menu.toolbar.export.sent		"Esporta posta inviata">
+<!ENTITY smartsave.menu.toolbar.export.drafts	"Esporta Bozze">
+<!ENTITY smartsave.menu.toolbar.export.all		"Esporta tutti i messaggi">
+<!ENTITY smartsave.menu.toolbar.config			"Configura SmartSave...">
+
+<!ENTITY smartsave.menu.toolbar.export.inbox.tooltip	"Esporta tutti i messaggi nella cartella Posta in Arrivo">
+<!ENTITY smartsave.menu.toolbar.export.sent.tooltip		"Esporta tutti i messaggi nella cartella Posta Inviata">
+<!ENTITY smartsave.menu.toolbar.export.drafts.tooltip	"Esporta tutti i messaggi nella cartella Bozze">
+<!ENTITY smartsave.menu.toolbar.export.all.tooltip		"Esporta tutti i messaggi nelle cartelle locali">
+<!ENTITY smartsave.menu.toolbar.config.tooltip			"Mostra la finestra di configurazione">
+
+<!ENTITY smartsave.context.singlemail		"Esporta i messaggi selezionati">
+<!ENTITY smartsave.context.folder			"Esporta la cartella selezionata">
+
+
+<!-- Entity Finestra di Opzioni settings.xul -->
+
+<!ENTITY smartsave.dialog.config.title		"Configurazione di SmartSave">
+
+<!ENTITY smartsave.dialog.config.tabs.general	"Generale">
+<!ENTITY smartsave.dialog.config.tabs.export	"Formato File">
+
+<!ENTITY smartsave.dialog.config.export.default	"[SUBJECT]_[SENDER]_[YEAR]-[MONTH]-[DAY]_[HOUR]-[MIN]-[SEC]">
+<!ENTITY smartsave.dialog.config.export.mode1	"[YEAR]-[MONTH]-[DAY]_[HOUR]-[MIN]-[SEC]_[SENDER]_[SUBJECT]">
+<!ENTITY smartsave.dialog.config.export.mode2	"[YEAR]-[MONTH]-[DAY]_[HOUR]-[MIN]-[SEC]_[SUBJECT]">
+<!ENTITY smartsave.dialog.config.export.mode3	"Definito da Utente:">
+<!ENTITY smartsave.dialog.config.export.mode4	"[YEAR]-[MONTH]-[DAY]_[HOUR]-[MIN]-[SEC]_[SENDER]_[RECIPIENT]_[SUBJECT]">
+
+<!ENTITY smartsave.dialog.config.export.default.tooltip	"Esempio Buon Compleanno_&lt;Stefano&gt;stefano@mysite.com_2006-06-03_14-22-01_">
+<!ENTITY smartsave.dialog.config.export.mode1.tooltip	"Esempio: 2006-06-03_14-22-01_&lt;Stefano&gt;stefano@mysite.com_Buon Compleanno">
+<!ENTITY smartsave.dialog.config.export.mode2.tooltip	"Esempio: 2006-06-03_14-22-01_Buon Compleanno">
+<!ENTITY smartsave.dialog.config.export.mode3.tooltip	"Definisci il tuo formato!!">
+<!ENTITY smartsave.dialog.config.export.mode4.tooltip	"Esempio: 2006-06-03_14-22-01_&lt;Stefano&gt;stefano@mysite.com_receiver@yoursite.com_Buon Compleanno">
+
+<!ENTITY smartsave.dialog.config.format.label				"Stringa definita dall&apos;utente:">
+<!ENTITY smartsave.dialog.config.basefolder.caption			"Cartella Base">
+<!ENTITY smartsave.dialog.config.basefolder.usethis.label	"Usa questo...">
+<!ENTITY smartsave.dialog.config.basefolder.askme.label		"Chiedimelo tutte le volte">
+<!ENTITY smartsave.dialog.config.basebolder.browse			"  Sfoglia...">
+<!ENTITY smartsave.dialog.config.extension.label			"Estensione:">
+<!ENTITY smartsave.dialog.config.recurse					"Guarda nelle sottocartelle">
+<!ENTITY smartsave.dialog.config.keepstruct					"Mantieni la struttura delle cartelle">
+<!ENTITY smartsave.dialog.config.overwrite					"Sovrascrivi file con lo stesso nome">
+<!ENTITY smartsave.dialog.config.advise.caption				"Avviso">
+<!ENTITY smartsave.dialog.config.beep						"Emetti un suono quando hai finito">
+<!ENTITY smartsave.dialog.config.msg						"Mostra un messaggio quando hai finito">
+
+<!ENTITY smartsave.dialog.config.format.tooltip					"Insersci qui il formato per il nome dei tuoi messaggi">
+<!ENTITY smartsave.dialog.config.basefolder.tooltip				"Percorso usato come base per i tuoi messaggi">
+<!ENTITY smartsave.dialog.config.basebolder.browse.tooltip		"Seleziona la tua cartella base">
+<!ENTITY smartsave.dialog.config.basefolder.usethis.tooltip		"Selezionalo se vuoi che SmartSave non ti chieda tutte le volte il percorso ma usi la cartella base">
+<!ENTITY smartsave.dialog.config.basefolder.askme.tooltip		"Selezionalo se vuoi che SmartSave ti chieda tutte le volte la destinazione delle cartelle">
+<!ENTITY smartsave.dialog.config.extension.tooltip				"Inserisci l&apos;estionsione del file (col punto)">
+<!ENTITY smartsave.dialog.config.filesystem.caption				"Opzioni Smart">
+<!ENTITY smartsave.dialog.config.recurse.tooltip				"Selezionalo se vuoi che SmartSave vada nelle sottocartelle">
+<!ENTITY smartsave.dialog.config.keepstruct.tooltip				"Selezionalo se vuoi che SmartSave mantenga la struttura delle cartelle sul disco">
+<!ENTITY smartsave.dialog.config.overwrite.tooltip				"Selezionalo se vuoi che SmartSave sovrascriva i vecchi file">
+<!ENTITY smartsave.dialog.config.beep.tooltip					"Selezionalo se vuoi che SmartSave emetta un segnale quando ha terminato">
+<!ENTITY smartsave.dialog.config.msg.tooltip					"Selezionalo se vuoi che SmartSave visualizzi un messaggio quando ha terminato">
+
+<!ENTITY smartsave.dialog.config.help.year		"Anno">
+<!ENTITY smartsave.dialog.config.help.month		"Mese">
+<!ENTITY smartsave.dialog.config.help.day		"Giorno">
+<!ENTITY smartsave.dialog.config.help.hour		"Ora">
+<!ENTITY smartsave.dialog.config.help.minute	"Minuti">
+<!ENTITY smartsave.dialog.config.help.secs		"Secondi">
+<!ENTITY smartsave.dialog.config.help.sender	"Mittente">
+<!ENTITY smartsave.dialog.config.help.recipient	"Destinatari">
+<!ENTITY smartsave.dialog.config.help.object	"Oggetto">
+<!ENTITY smartsave.dialog.config.help.rnd		"Stringa casuale">
+
+<!ENTITY smartsave.dialog.config.help.year.tooltip		"Esempio: 2006">
+<!ENTITY smartsave.dialog.config.help.month.tooltip		"Esempio: 06">
+<!ENTITY smartsave.dialog.config.help.day.tooltip		"Esempio: 03">
+<!ENTITY smartsave.dialog.config.help.hour.tooltip		"Esempio: 14">
+<!ENTITY smartsave.dialog.config.help.minute.tooltip	"Esempio: 22">
+<!ENTITY smartsave.dialog.config.help.secs.tooltip		"Esempio: 01">
+<!ENTITY smartsave.dialog.config.help.sender.tooltip	"Esempio: &lt;Stefano&gt; stefano@mysite.com">
+<!ENTITY smartsave.dialog.config.help.recipient.tooltip	"Esempio: &lt;Pippo&gt; pippo@yoursite.com">
+<!ENTITY smartsave.dialog.config.help.object.tooltip	"Esempio: Happy Birthday!!">
+<!ENTITY smartsave.dialog.config.help.rnd.tooltip		"Esempio: 32434.324738483">
+
+<!ENTITY smartsave.dialog.config.help.tooltip	"Aggiungi una stringa esterna">
+<!ENTITY smartsave.dialog.config.help.label		"Aggiungi">
+
+
+<!-- ENTITY DELLA FINESTRA DI REPORT FINALE -->
+<!ENTITY smartsave.dialog.logger.title		"SmartSave Report">
+<!ENTITY smartsave.dialog.logger.label		"Di seguito sono riportati i risultati dell&apos;esportazione:">
+<!ENTITY smartsave.dialog.logger.save		"Salva">
